@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>shopora
+    </title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+   <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css"  rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+    <div class="navbar">
+    <div class="logo">
+        <a href="index.html"><img src="FullLogo_Transparent_NoBuffer.png" alt="image logo" width="150px"></a>
+
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="account.html">Account</a></li>
+                
+            </ul>
+        </nav>
+        <a href="cart.html"><img src="/cart.png" width="30px" height="30px" alt="cart image"></a>
+        <img src="/menu.png" class="menu-icon" onclick="menutoggle()">
+    </div>
+    </div>
+<!------------cart items details----------->
+<div class="small-container cart-page">
+    <table> 
+        <tr>
+            <th>Product</th>
+            <th>Quatity</th>
+            <th>Subtotal</th>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="/red tshirt.jpg" width="100px">
+                <div>
+                <p>Red Printed T-shirt</p>
+                <small>price :$50.00</small>
+                <br>
+                <a href="">Remove</a>
+                </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>$50.00</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="/shose.jpg" width="100px">
+                <div>
+                <p>shose</p>
+                <small>price :$50.00</small>
+                <br>
+                <a href="">Remove</a>
+                </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>$50.00</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="/shose1.jpg" width="100px">
+                <div>
+                <p>shose</p>
+                <small>price :$50.00</small>
+                <br>
+                <a href="">Remove</a>
+                </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>$50.00</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="/timex.jpg" width="100px">
+                <div>
+                <p>Timex Watch</p>
+                <small>price :$50.00</small>
+                <br>
+                <a href="">Remove</a>
+                </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>$50.00</td>
+        </tr>
+    </table>
+
+    <div class="total-price">
+        <table>
+            <tr>
+                <td>Subtotal</td>
+                <td>$200.00</td>
+            </tr>
+            <tr>
+                <td>Tax</td>
+                <td>$30.00</td>
+            </tr>
+            <tr>
+                <td>total</td>
+                <td>$230.00</td>
+            </tr>
+            
+        </table>
+    </div>
+    <div class="container1"> <a href="" class="btn">Proceed to checkout &#8594;</a>
+</div>
+
+                        
+
+
+</div>
+
+
+         <!----------footer-------->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our app</h3>
+                <p>
+                    Download App for Android and Ios mobile phone.
+                </p>
+                <div class="app-logo">
+                    <img src="/play-store.png">
+                    <img src="/app-store.png">
+                </div>
+
+            </div>
+                 <div class="footer-col-2">
+                    <img src="FullLogo_Transparent_NoBuffer.png" alt="logo" width="200px">
+                    <p>Our Purpose Is To Sustainably Make the pleasure and Benefits of Sports Accessible to the many</p>
+                 </div>
+                 <div class="footer-col-3">
+                    <h3>Useful LInks </h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affilliate</li>
+                    </ul>
+                 </div>
+                 <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>You Tube</li>
+                    </ul>
+                 </div>
+
+        </div>
+    </div>
+    <hr>
+    <p class="Copyright">@Copyright 2026 - shopora </p>
+</div>
+
+<!-------js for toogle menu------->
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+    {
+        MenuItems.style.maxHeight = "200px";
+    }
+    else
+    {
+        MenuItems.style.maxHeight = "0px";
+    }
+}
+</script>
+
+                
+</body>
+</html>
